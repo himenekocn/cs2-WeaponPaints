@@ -164,7 +164,7 @@ namespace WeaponPaints
 
 			try
 			{
-				var response = await client.GetAsync("https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/VERSION").ConfigureAwait(false);
+				var response = await client.GetAsync("https://mirror.ghproxy.com/https://raw.githubusercontent.com/Nereziel/cs2-WeaponPaints/main/VERSION").ConfigureAwait(false);
 
 				if (response.IsSuccessStatusCode)
 				{
